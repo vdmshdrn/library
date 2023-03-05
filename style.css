@@ -1,0 +1,19 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.library {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+form {
+    border: solid 1px black;
+    width: 400px;
+    margin: 0 auto;
+}
+label, input {
+    display: inline-block;
+    height: 22px;
+}
