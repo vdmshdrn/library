@@ -27,6 +27,11 @@ body {
     text-decoration: none;
     
 }
+.add-book {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
 
 .add-to-library {
     /*display: none;*/
