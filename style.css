@@ -1,19 +1,37 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 .library {
-    width: 80%;
+    /*display: none;*/
+    width: 600px;
     margin: 0 auto;
     text-align: center;
 }
+
 form {
+    display: flex;
+    flex-direction: column;
     border: solid 1px black;
     width: 400px;
     margin: 0 auto;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 5px;
+
 }
-label, input {
-    display: inline-block;
-    height: 22px;
+
+input {
+    padding: 10px 10px;
+
+}
+
+#submit {
+    width: 30%;
+    margin: 15px auto;
+    padding: 10px 0;
+   
 }
