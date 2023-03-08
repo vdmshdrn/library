@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    <div class="library">
-    <h1>My library</h1>
-    <form action="" class="form">
-        <label for="title">Title <br><input type="text" id="title"></label>
-        <label for="auhtor"> Autor <br><input type="text" id="author"></label>
-        <label for="pages"> Pages <br><input type="number" id="pages"></label>
-        <label for="read">Read</label>
-        <input type="checkbox" name="Read" id="read">
-        <button id="submit">Submit</button>
-    </form>
+    <header class="header">
+        <h2 class="logo">MyLibrary</h2>
+        <nav>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </nav>
+    </header>
+    <h1>Library</h1>
+    <button>add book</button>
+    <div class="add-to-library">
+        <h2>Add new book</h2>
+        <form action="" class="form">
+            <label for="title">Title <br><input type="text" id="title"></label>
+            <label for="auhtor"> Autor <br><input type="text" id="author"></label>
+            <label for="pages"> Pages <br><input type="number" id="pages"></label>
+            <label for="read">Read</label>
+            <input type="checkbox" name="Read" id="read">
+            <button id="submit">Submit</button>
+        </form>
     </div>
 </body>
+
 </html>
