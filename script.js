@@ -20,6 +20,11 @@ function addBookToLibrary() {
     let pages = document.querySelector("#pages").value;
     let read = document.querySelector("#read").value;
     let book = new Book(title, author, pages, read);
-    console.log(book);
+    myLibrary.push(book);
+    console.log(myLibrary);
 }
-addBookToLibrary();
+
+document.querySelector('.form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    addBookToLibrary();
+})
