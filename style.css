@@ -62,3 +62,15 @@ input {
     padding: 10px 0;
 
 }
+.container {
+    width: 64%;
+    display: flex;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+.card {
+    padding: 20px 20px;
+    border: solid 1px black;
+    border-radius: 15px;
+    margin: 0 20px;
+}
