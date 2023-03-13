@@ -13,6 +13,19 @@ function Book(title, author, pages, read) {
     this.pages = pages;
     this.read = read;
 }
+function render() {
+    let container = document.querySelector(".container");
+    container.innerHTML = '';
+    for (let i = 0; i < myLibrary.length; i++) {
+        let book = myLibrary[i];
+        let myBook = document.createElement('div');
+        myBook.innerHTML = `<div class="card">
+                                <h2>${book.title}</h2>
+                                <h4>${book.author}</h4>
+                           <div>`
+        container.appendChild(myBook);
+    }
+}
 
 function addBookToLibrary() {
     let title = document.querySelector("#title").value;
@@ -21,7 +34,7 @@ function addBookToLibrary() {
     let read = document.querySelector("#read").value;
     let book = new Book(title, author, pages, read);
     myLibrary.push(book);
-    console.log(myLibrary);
+    render();
 }
 
 document.querySelector('.form').addEventListener('submit', function (event) {
