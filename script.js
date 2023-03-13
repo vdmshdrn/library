@@ -21,7 +21,8 @@ function render() {
         let myBook = document.createElement('div');
         myBook.innerHTML = `<div class="card">
                                 <h2>${book.title}</h2>
-                                <h4>${book.author}</h4>
+                                <h4> by ${book.author}</h4>
+                                <p>${book.pages} pages</p>
                            <div>`
         container.appendChild(myBook);
     }
