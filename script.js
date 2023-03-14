@@ -23,6 +23,7 @@ function render() {
                                 <h2>${book.title}</h2>
                                 <h4> by ${book.author}</h4>
                                 <p>${book.pages} pages</p>
+                                <p class="status">${book.read ? "Read" : "Not read"}</p>
                            <div>`
         container.appendChild(myBook);
     }
@@ -32,9 +33,10 @@ function addBookToLibrary() {
     let title = document.querySelector("#title").value;
     let author = document.querySelector("#author").value;
     let pages = document.querySelector("#pages").value;
-    let read = document.querySelector("#read").value;
+    let read = document.querySelector("#read").checked;
     let book = new Book(title, author, pages, read);
     myLibrary.push(book);
+    console.log(myLibrary);
     render();
 }
 
