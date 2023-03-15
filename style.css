@@ -73,8 +73,18 @@ input {
 
 .card {
     padding: 20px 20px;
+    position: relative;
     border: solid 1px black;
     border-radius: 15px;
     margin: 0 20px;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.delete {
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    color: black;
 }

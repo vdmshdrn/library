@@ -20,10 +20,12 @@ function render() {
         let book = myLibrary[i];
         let myBook = document.createElement('div');
         myBook.innerHTML = `<div class="card">
+                                <a href="#" class="delete">X</a>
                                 <h2>${book.title}</h2>
                                 <h4> by ${book.author}</h4>
                                 <p>${book.pages} pages</p>
                                 <p class="status">${book.read ? "Read" : "Not read"}</p>
+                                
                            <div>`
         container.appendChild(myBook);
     }
