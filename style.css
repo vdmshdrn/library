@@ -81,10 +81,11 @@ input {
 }
 
 .delete {
-    text-decoration: none;
+    width: 15px;
+    height: 15x;
     display: inline-block;
     position: absolute;
-    top: 25px;
-    right: 15px;
+    top: 5px;
+    right: 5px;
     color: black;
 }

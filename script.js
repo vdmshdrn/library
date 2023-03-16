@@ -4,7 +4,6 @@ let addBookButton = document.querySelector(".add-book");
 
 addBookButton.addEventListener('click', function () {
     wrapper.style.display = "block";
-    console.log('pressed');
 });
 
 function Book(title, author, pages, read) {
@@ -20,8 +19,8 @@ function render() {
         let book = myLibrary[i];
         let myBook = document.createElement('div');
         myBook.innerHTML = `<div class="card">
-                                <a href="#" class="delete">X</a>
-                                <h2>${book.title}</h2>
+                        
+                                <h2>${book.title}</h2><button class="delete" onclick="deleteBook()">X</button>
                                 <h4> by ${book.author}</h4>
                                 <p>${book.pages} pages</p>
                                 <p class="status">${book.read ? "Read" : "Not read"}</p>
@@ -45,4 +44,7 @@ function addBookToLibrary() {
 document.querySelector('.form').addEventListener('submit', function (event) {
     event.preventDefault();
     addBookToLibrary();
-})
+});
+function deleteBook() {
+    console.log("Book delete");
+}
