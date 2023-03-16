@@ -39,12 +39,15 @@ function addBookToLibrary() {
     myLibrary.push(book);
     console.log(myLibrary);
     render();
+    
 }
 
 document.querySelector('.form').addEventListener('submit', function (event) {
     event.preventDefault();
     addBookToLibrary();
 });
-function deleteBook() {
-    console.log("Book delete");
+function deleteBook(index) {
+    console.log(index);
+    myLibrary.splice(index, 1);
 }
+
